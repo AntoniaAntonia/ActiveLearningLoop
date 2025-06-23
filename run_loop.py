@@ -26,6 +26,8 @@ cell_size = r_max * 2 + 10.0
 total_structures = 3000
 dataset_name = "dimers_1000"
 nanoparticle_path = "MD_300_43_F_opt_final.xyz"
+df_r_min_per_pair = "r_min_per_pair.csv"
+
 
 loop = ActiveLearningLoop(
     elements=elements,
@@ -33,6 +35,7 @@ loop = ActiveLearningLoop(
     cell_size=cell_size,
     total_structures=total_structures,
     dataset_name=dataset_name,
+    df_r_min_per_pair=df_r_min_per_pair,
     nanoparticle_path=nanoparticle_path,
     n_points=167,
     max_complexity=8,
