@@ -19,7 +19,7 @@ from mace.calculators import MACECalculator
 from mace.cli.run_train import run
 from mace.tools import build_default_arg_parser
 
-# === User-defined setup ===
+# define setup (which elements are in the target structure, how many structures should be generated per complexity etc)
 elements = ["C", "O", "Pt"]
 r_max = 10.0
 cell_size = r_max * 2 + 10.0
